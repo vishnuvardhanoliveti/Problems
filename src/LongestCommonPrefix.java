@@ -25,6 +25,7 @@ public class LongestCommonPrefix {
 		int firstStringIterator=0;
 		char found=' ';
 		int size=strs.length;
+		
 		//First check if array is empty
 		if(size>0 && strs[0].length()>0) {
 			while(firstStringIterator<strs[0].length()) {
@@ -32,6 +33,7 @@ public class LongestCommonPrefix {
 				int otherIterator=1;
 				//Start from second string in array to find if you have common prefix as first
 				for(int i=1;i<size;i++) {
+					
 					//Make sure that rest of the  strings in array have length  greater than the index position of the character i.e firstStringIterator from first string
 					if(strs[i].length()>firstStringIterator && strs[i].charAt(firstStringIterator)==found) {
 						otherIterator++;
